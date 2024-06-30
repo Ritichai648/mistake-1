@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="column">
+
+            <div id="mistake-container">
+                <h1>ตารางความผิด</h1>
+            </div>
+        </div>
+        <div class="column">
+            <div class="form">
+                <h1>เพิ่มความผิด</h1>
+                <h2>เวลา 1 เดือน ครบ 5 แต้ม = 1 รูป</h2>
+                <div class="col-3 input-effect">
+                    <input class="effect-19" type="text" id="date" placeholder="ใส่ วัน/เดือน/ปี">
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-19" type="text" id="time" placeholder="ใส่เวลา">
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-19" type="text" id="mistake" placeholder="ใส่ความผิด">
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-19" type="text" id="point" placeholder="ใส่ระดับความผิด">
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                <div class="col-3 input-effect">
+                    <input class="effect-19" type="text" id="pay" placeholder="ให้รูปหรือยัง (optional)">
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                <div>
+                    <button class="button" onclick="saveMistake()">บันทึกความผิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/admin.js"></script>
+    <script src="../js/save.js"></script>
+</body>
+
+</html>
